@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disease Detection</title>
+    <style>
+        body {
+            background-image: url('https://images.newindianexpress.com/uploads/user/imagelibrary/2022/10/10/w1200X800/IIT_guwahati-_Express.jpeg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+            margin-top: 50px;
+			font-size: 50px;
+			padding: 10px;
+        }
+        form {
+            color: white;
+            margin: auto;
+            margin-top: 50px;
+            max-width: 500px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+			font-size: 35px;
+        }
+		input[type=file] {
+		font-size: 16px;
+		padding: 10px;
+		border-radius: 5px;
+		width: 100%;
+		max-width: 400px;
+		margin-bottom: 20px;
+		}
+        input[type=file] {
+            margin-bottom: 20px;
+        }
+        button[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+		input[type=file] {
+		font-size: 16px;
+		padding: 10px;
+		border-radius: 5px;
+		width: 100%;
+		max-width: 350px;
+		margin-bottom: 20px;
+		background-color: #fff;
+		color: #333;
+		border: 1px solid #ccc;
+     	}
+
+        select {
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+		.makers {
+			position: fixed;
+			bottom: 2px;
+			right: 2px;
+			padding: 10px;
+			background-color: #f2f2f2;
+			border-top-left-radius: 10px;
+			color: #333;
+			font-size: 20px;
+		}
+
+    </style>
+</head>
+<body>
+	<h1>A GENERALIZED DEEP LEARNING FRAMEWORK FOR CLASSIFICATION OF VARIOUS BRAIN DISORDERS</h1>
+		<form action="/predict" method="POST" enctype="multipart/form-data">
+		<label>Select what you want to detect:</label>
+		<select name="disease" id="disease">
+			<option value="brain_tumor">Brain Tumor</option>
+			<option value="alzheimer">Alzheimer's Disease</option>
+			<option value="epilepsy">Epilepsy</option>
+			<option value="parkinson">ADHD</option>
+			<option value="parkinson">Parkinson's Disease</option>
+			<option value="parkinson">Schizophrenia</option>
+		</select>
+		<br>
+		<label>Choose an image:</label>
+		<br>
+		<input type="file" name="file"><br><br>
+		<button <input type="submit" value="Predict">Predict</button>
+	</form>
+<div class="makers">
+    <p>By - </p>
+	<p>Nitin Yadav (Roll No. 226102009)</p>
+    <p>Umesh Nair (Roll No. 226102024)</p>
+</div>
+</body>
+</html>
